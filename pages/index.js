@@ -69,6 +69,7 @@ const Home = () => {
         xl:bg-norepeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
           ></div>
           <ParticlesContainer />
+
           <motion.div
             variants={fadeIn("up", 0.5)}
             initial="hidden"
