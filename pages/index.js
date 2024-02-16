@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Guilherme Marques</title>
-        <link rel="icon" href="/logo.svg" />
+        <title>Débora Cristina - Social Media</title>
+        <link rel="icon" href="/logo.png" />
       </Head>
       <div className="bg-primary/60 h-full">
         <div
