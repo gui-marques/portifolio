@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from "react";
 // icons
 import {
@@ -20,36 +21,36 @@ import {
 //  data
 const aboutData = [
   {
-    title: 'skills',
+    title: 'Habilidades',
     info: [
       {
         title: 'Web Development',
         icons: [
-          // eslint-disable-next-line react/jsx-key
+          
           <FaHtml5 />,
-           // eslint-disable-next-line react/jsx-key
+          
           <FaCss3 />,
-           // eslint-disable-next-line react/jsx-key
+           
           <FaJs />,
-           // eslint-disable-next-line react/jsx-key
+           
           <FaReact />,
-           // eslint-disable-next-line react/jsx-key
+          
           <SiNextdotjs />,
-           // eslint-disable-next-line react/jsx-key
+          
           <SiFramer />,
-           // eslint-disable-next-line react/jsx-key
+     
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-         // eslint-disable-next-line react/jsx-key
+        
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'Premios',
     info: [
       {
         title: 'Webby Awards - Honoree',
@@ -62,7 +63,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'experience',
+    title: 'Experiências',
     info: [
       {
         title: 'UX/UI Designer - XYZ Company',
@@ -79,7 +80,7 @@ const aboutData = [
     ],
   },
   {
-    title: 'credentials',
+    title: 'Certificados',
     info: [
       {
         title: 'Web Development - ABC University, LA, CA',
@@ -115,7 +116,7 @@ const About = () => {
   initial='hidden'
   animate='show'
   exit='hidden'
-  className='hidden xl:flex absolute bottom-0 -left-[370px]'
+  className='hidden xl:flex absolute bottom-0 -left-[220px]'
   >
     <Avatar />
   </motion.div>
@@ -212,14 +213,14 @@ const About = () => {
         {aboutData[index].info.map((item, itemIndex) => {
             return(
               <div key={itemIndex}
-              className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+              className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-texto/60'>
                 <div className='font-light mb-2 md:mb-0' >{item.title}</div>
                 <div className='hidden md:flex'>-</div>
                 <div>{item.stage}</div>
                 <div className='flex gap-x-4'> 
                   {item.icons?.map((icon, itemIndex) => {
-                     // eslint-disable-next-line react/jsx-key
-                    return <div className='text-2xl text-white'>{icon}</div>;
+                     
+                    return <div className='text-2xl text-texto'>{icon}</div>;
                   })}
                 </div>
                </div> 

@@ -16,7 +16,8 @@ const Work = () => {
           variants={fadeIn('up', 0.3)}
           initial="hidden"
           animate='show'
-          className='h2 xl:mt-8'>Meus Trabalhos <span className='text-accent'>.</span>
+          className='h2 xl:mt-12'>
+            Meus Trabalhos <span className='text-accent'>.</span>
           </motion.h2>
           <motion.p 
           variants={fadeIn('up', 0.6)}
